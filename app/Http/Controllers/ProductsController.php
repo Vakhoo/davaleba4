@@ -30,6 +30,6 @@ class ProductsController extends Controller
     		"short_description"=>$req->input("short-description"),
     	]);
 
-        return $this->index() ;
+        return redirect()->action("ProductsController@index") ;
     }
 }
